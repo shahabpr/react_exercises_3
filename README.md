@@ -1,16 +1,41 @@
-# React + Vite
+# تمرین‌های ری‌اکت و جاوااسکریپت
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## هدف
+- تمرین عملی ری‌اکت و جاوااسکریپت در کنار دوره‌هایی که دنبال می‌کنم.
+- یادگیری با نوشتن کد توسط خودم؛ دستیار خطاها را می‌گیرد و راهنمایی می‌کند.
+- عمیق‌تر کردن فهم مفاهیم مهم ری‌اکت با مثال و تمرین هدفمند.
 
-Currently, two official plugins are available:
+## روش کار
+- من کد می‌نویسم؛ دستیار راهنمایی و دیباگ می‌کند (نه نوشتن راه‌حل کامل).
+- در صورت نیاز: توضیح مفهوم با مثال، بعد تمرین برای تثبیت.
+- هر سشن جدید با تاریخ در انتهای بخش «سوابق سشن‌ها» اضافه می‌شود و ادامهٔ نوشتن همان‌جا انجام می‌گیرد.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## برنامهٔ پیشنهادی (تقریبی)
+- مبانی JS: تابع، آرایه/آبجکت، map/filter/reduce، destructuring، spread، async/await.
+- مبانی React: JSX، کامپوننت، props، شرطی‌سازی، رندر لیست، رویدادها.
+- state و هوک‌ها: useState، useEffect، useRef، useReducer، useContext، useMemo/useCallback.
+- فرم‌ها و کنترل ورودی، بالابردن state، composition.
+- دریافت داده (fetch) و مدیریت loading/error.
+- مسیریابی (React Router) و یک پروژهٔ کوچک پایانی.
 
-## React Compiler
+## ساختار پروژه
+- `src/main.jsx` — نقطهٔ ورود و mount کردن React.
+- `src/App.jsx` — کامپوننت اصلی (محل تمرین‌ها).
+- `src/App.css` / `src/index.css` — استایل‌ها.
+- `public/` — فایل‌های استاتیک.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## دستورات
+```bash
+npm run dev     # اجرای سرور توسعه
+npm run lint    # بررسی ESLint
+npm run build   # بیلد تولیدی
+```
 
-## Expanding the ESLint configuration
+## سوابق سشن‌ها
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2026-11-25 — راه‌اندازی و مقدمات
+- بررسی وضعیت گیت و رفع نگرانی امنیتی: `opencode.json` هیچ‌وقت کامیت نشده بود.
+- افزودن `opencode.json` / `opencode.jsonc` / `.opencode/` به `.gitignore` و پوش آن.
+- آشنایی با رفتار paste در opencode (compact/full) و `/editor`.
+- ساخت `AGENTS.md` (حافظهٔ دستیار) و بازنویسی `README.md` به‌عنوان لاگ یادگیری.
+- گام بعدی: شروع تمرین‌های JS/React و نوشتن اولین کامپوننت‌ها در `src/App.jsx`.
